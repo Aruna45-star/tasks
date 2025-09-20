@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #ffd700;
+        }
+
+        p, em {
+            color: #e0e0e0;
+        }
+
+        header, section, article, footer {
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #111111;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            background-color: #111111;
+            color: #ffd700;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #111111;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        th {
+            background-color: #222222;
+        }
+
+        button {
+            background-color: #3f26df;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+
+        input {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #222222;
+            color: #fff;
+        }
+
+        iframe {
+            border-radius: 12px;
+        }
+
+        /* New div styling */
+        .bordered-div {
+            border: 2px solid #ffffff;
+            padding: 20px;
+            margin: 30px;
+            background-color: #111111;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        /* Hover Button Example */
+        .hover-button {
+            padding: 12px 25px;
+            background-color: #4a2dda;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .hover-button:hover {
+            background-color: #ffd700;
+            color: #000;
+            cursor: pointer;
+        }
+
+        /* Card Example */
+        .card {
+            width: 260px;
+            margin: 20px auto;
+            background-color: #111111;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px 0;
+            color: #ffd700;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MY FIRST WEBPAGE</h1>
+    </header>
+
+    <section>
+        <p><em>Aruna is a hardworking Computer Science student specializing in Artificial Intelligence. She is curious about coding and enjoys learning topics like HTML, Python, Machine Learning, and software development. Alongside her studies, she is preparing for job opportunities and interviews, always aiming to improve her skills step by step. She is also disciplined about following a daily plan, balancing college, self-learning, and personal goals like fitness. Aruna is determined, consistent, and positive-minded, which makes her stand out as someone who will achieve great things in both academics and her career.</em></p>
+    </section>
+
+    <article>
+        <h2>My Hobby</h2>
+        <p>One of my favorite hobbies is painting. I enjoy experimenting with colors and expressing my thoughts creatively. It helps me relax, focus, and improve my artistic skills step by step.</p>
+    </article>
+
+    <hr>
+
+    <section>
+        <h2>Image</h2>
+        <img src="nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg"
+             alt="Nature Background" width="500" height="300">
+    </section>
+
+    <section>
+        <h2>My Favorites</h2>
+        <ul>
+            <li>Balu</li>
+            <li>OG</li>
+            <li>Kushi</li>
+            <li>MS Dhoni</li>
+            <li>Jersey</li>
+        </ul>
+
+        <ol>
+            <li>Banana</li>
+            <li>Grapes</li>
+            <li>Apple</li>
+            <li>Jerry</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Student Table</h2>
+        <table border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Roll Number</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Aruna</td>
+                <td>101</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Sai</td>
+                <td>102</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Bindu</td>
+                <td>103</td>
+                <td>92</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Useful Links</h2>
+        <p><a href="https://www.google.com">Go to Google</a></p>
+        <p><a href="https://www.youtube.com" target="_blank">Go to YouTube</a></p>
+    </section>
+
+    <section>
+        <h2><em>🎵 MUSIC SECTION</em></h2>
+        <iframe 
+            src="https://open.spotify.com/embed/track/6J2Fqe1eXICcd0mGZiIEzK?utm_source=generator"
+            width="65%" 
+            height="234" 
+            frameborder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <div class="bordered-div">
+        This is a div with a border, padding, and margin. It is styled to stand out from the rest of the content.
+    </div>
+    <section>
+        <h2>Hover Button Example</h2>
+        <button class="hover-button">Hover Me!</button>
+    </section>
+    <section>
+        <h2>Card Example</h2>
+        <div class=" id card">
+            <h3>Card Title</h3>
+            <p>This is a short description inside the card. Stylish and simple!</p>
+        </div>
+    </section>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <footer>
+        Made by Aruna Gattem
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
